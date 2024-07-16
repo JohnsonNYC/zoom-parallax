@@ -31,8 +31,6 @@ const ParallaxContainer = () => {
     offset: ["start start", "end end"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 4]);
-
   const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
   const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
   const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
@@ -78,7 +76,6 @@ const Sticky = styled.div`
   top: 0;
   overflow: hidden;
   height: 100vh;
-  background: orange;
 
   .el {
     width: 100%;
